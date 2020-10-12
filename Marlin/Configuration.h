@@ -743,12 +743,13 @@
 //#define DISTINCT_E_FACTORS
 
 /**
+ * (currentSteps * expectedDistance) / measuredDistance = calibratedSteps
  * Default Axis Steps Per Unit (steps/mm)
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 89.39, 784.31, 89.39 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 89.43, 89.72, 803.18, 89.72 }
 
 /**
  * Default Max Feed Rate (mm/s)
