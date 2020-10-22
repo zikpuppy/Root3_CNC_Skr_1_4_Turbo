@@ -35,7 +35,8 @@
 //
 // Servos
 //
-#define SERVO0_PIN                         P2_00
+//#define SERVO0_PIN                         P2_00
+#define SPINDLE_LASER_ENA_PIN              P2_00
 
 //
 // TMC StallGuard DIAG pins
