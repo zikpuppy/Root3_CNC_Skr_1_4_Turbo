@@ -1,6 +1,26 @@
 # Root3_CNC_Skr_1_4_Turbo
 Tracking my changes as I tweak Marlin 2.0.x to run Root3 CNC using skr 1.4 Turbo board
 
+#Latest Updates
+9/29/2020
+
+Adding Dual Y-Axis using Y Pins nad E0 Pins
+
+Setting Custom Bed Size
+
+Using Min and Max hardware stops
+
+Step/mm Calibration
+
+Inverting Y-Axis Direction
+
+Adding Z-Probe Zero Offset
+
+Adding Custom Code in Pins file to force Marlin to accept Max Endstop pins
+
+Some updates sourced from the MPCNC project Lots of great information on the SKR 1.4 Turbo there.
+
+
 #Original Marlin ReadMe
 # Marlin 3D Printer Firmware
 
