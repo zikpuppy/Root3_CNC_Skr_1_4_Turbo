@@ -35,7 +35,8 @@
 //
 // Servos
 //
-#define SERVO0_PIN                         P2_00
+//#define SERVO0_PIN                         P2_00
+#define SPINDLE_LASER_ENA_PIN              P2_00
 
 //
 // TMC StallGuard DIAG pins
@@ -83,6 +84,27 @@
     #define Z_STOP_PIN                     P1_27  // Z-STOP
   #endif
 #endif
+//Adding Max endstop definitions if not already defined MAJ
+/* This code makes soft bump stop not work */
+#ifdef USE_XMAX_PLUG
+  #ifndef X_MAX_PIN
+    #define X_MAX_PIN                      P1_26
+  #endif
+#endif
+
+#ifdef USE_YMAX_PLUG
+  #ifndef Y_MAX_PIN
+    #define Y_MAX_PIN                      P1_25  // E1DET
+  #endif
+#endif
+
+#ifdef USE_ZMAX_PLUG
+  #ifndef Z_MAX_PIN
+    #define Z_MAX_PIN                      P1_00  // PWRDET
+  #endif
+#endif
+/* Testing soft bumps*/
+//Adding Max endstop definitions if not already defined MAJ
 
 //
 // Z Probe (when not Z_MIN_PIN)
